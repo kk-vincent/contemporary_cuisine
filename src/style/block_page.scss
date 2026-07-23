@@ -1,0 +1,63 @@
+.modal-overlay {
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.25s ease-out forwards;
+}
+
+
+.modal-content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    position: relative;
+    max-height: 80vh;
+    max-width: 90vw;
+    min-width: 70vw;
+    min-height: 80vh; 
+    padding: 24px;  
+
+    overflow-y: auto;
+    background-color:  var(--block-bg-color);
+    border: 1px solid var(--block-border-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px var(--block-bg-color);
+    color: var(--font-color); 
+    
+
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.modal-content-box::-webkit-scrollbar {
+    width: 6px;
+}
+.modal-content-box::-webkit-scrollbar-thumb {
+    background: var(--block-border-color);
+    border-radius: 3px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); }
+    to { transform: translateY(0); }
+}
+
+.modal-content-box.is-scrollable {
+    align-items: flex-start; 
+}
+
+.modal-content-box.over-scroll {
+    overflow: hidden;
+}

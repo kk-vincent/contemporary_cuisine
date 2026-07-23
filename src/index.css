@@ -1,0 +1,33 @@
+:root {
+  --Turntable-border-color: #00FFD1;
+  --bg-card-color: #00ffd0;
+  --Turntable-border-color: #AA8131;
+  --Turntable-bg-color: #26190C;
+  --bg-color: #26190C;
+  --table-font-color: #797979;
+  --card-bg-color: #422D17;
+  --card-font-color: #C19E4F;
+
+  --font-color: #fff;
+
+
+
+  --nav-background: rgba(0, 0, 0, 0.6);
+
+  --home-card-bg: #422D17;
+  --home-num-color: #C19E4F;
+  --home-name-color: #00FFD1;
+  --home-card-num: 80px;
+  --home-card-title: 44px;
+  --home-card-subtitle: 32px;
+  --home-card-p:16px;
+  --home-span: 13px;    
+
+  --home-tages-bg: #422D17;
+  --home-tags-bo: 1px;
+  --home-tags-bo-col: #C19E4F;
+
+  --block-bg-color: rgba(66, 45, 23, 0.7);
+  --block-sub: #797979;
+  --block-border-color: #fee0b1;
+}

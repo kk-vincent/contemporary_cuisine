@@ -1,0 +1,46 @@
+.home-container {
+    background-color: var(--card-bg-color);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    
+    .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        z-index: 1;
+    }
+
+   
+    .main-nav-position {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10; 
+    }
+
+    .content-block {
+        position: relative;
+        z-index: 10;
+        margin: 50px auto;
+        width: 80%;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.85); 
+        backdrop-filter: blur(10px); 
+        border-radius: 12px;
+
+        &.fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
